@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+}
+body{
+    background-image: url('https://source.unsplash.com/1600x900/?atlanta');
+    background: #ccc;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container{
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 1.75em;
+    max-width: 420px;
+    width: 100%;
+    border-radius: 1.5em;
+}
+.searchBar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5em;
+}
+.searchBar input{
+    padding: 0.4em 1em;
+    border-radius: 1.5em;
+    background: rgba(124, 124, 124, 0.2);
+    color: white;
+    font-size: 1rem;
+    width: calc(100% - 3em);
+}
+.searchBar button{
+    background: rgba(124, 124, 124, 0.2);
+    color: white;
+    border-radius: 50%;
+    height: 2em;
+    width: 2em;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+}
+.searchBar button:hover {
+    background: rgba(124, 124, 124, 0.4);
+}
+.city{
+    margin: 1em 0;
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+.tempetature{
+    font-size: 2rem;
+    font-weight: 300;
+    margin-bottom: 0.4em;
+}
+.otherInfo{
+    display: flex;
+    flex-direction: column;
+}
+.otherInfo span{
+    font-size: .8rem;
+    letter-spacing:.8px;
+}
+.weatherType{
+    display: flex;
+    align-items: center;
+}
+.description{
+    font-size: 1rem;
+    font-weight:lighter;
+    text-transform: capitalize;
+}
+
